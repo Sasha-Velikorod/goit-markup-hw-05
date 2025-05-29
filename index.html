@@ -483,7 +483,7 @@
 
         <div class="footer-form-container">
           <p class="footer-subscribe-text">Subscribe</p>
-          <form action="" class="form-footer">
+          <form class="form-footer">
             <label class="footer-label" for="footer-email">
               <input
                 class="footer-form-input"
@@ -512,14 +512,14 @@
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
-        <form action="" class="modal-form">
+        <form class="modal-form">
           <div class="container-label">
             <label class="modal-label" for="user-name">Name</label>
             <div class="container-svg-input">
               <input
                 type="text"
                 class="modal-input"
-                name="user_name"
+                name="user-name"
                 id="user-name"
                 required
               />
@@ -534,7 +534,7 @@
               <input
                 type="tel"
                 class="modal-input"
-                name="user_tel"
+                name="user-tel"
                 id="user-tel"
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                 title="xxx-xxx-xx-xx"
@@ -551,7 +551,7 @@
               <input
                 type="email"
                 class="modal-input"
-                name="user_email"
+                name="user-email"
                 id="user-email"
                 required
               />
@@ -561,12 +561,10 @@
             </div>
           </div>
           <div class="container-label-textarea">
-            <label class="modal-label-textarea" for="user-comment"
-              >Comment</label
-            >
+            <label class="modal-label" for="user-comment">Comment</label>
             <textarea
               class="user-comment"
-              name="comment"
+              name="user-comment"
               id="user-comment"
               placeholder="Text input"
             >
@@ -576,12 +574,12 @@
             <input
               class="checkbox-input visually-hidden"
               type="checkbox"
-              name="policy"
-              value="agree"
-              id="user-agree"
+              name="user-privacy"
+              value="true"
+              id="user-privacy"
             />
 
-            <label class="checkbox-label" for="user-agree">
+            <label class="checkbox-label" for="user-privacy">
               <span class="checkbox-custom"
                 ><svg class="svg-checkbox-custom" width="10" height="8">
                   <use href="./images/icons.svg#icon-agree"></use>
