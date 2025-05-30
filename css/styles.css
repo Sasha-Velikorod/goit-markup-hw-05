@@ -673,7 +673,6 @@ body {
 }
 .container-label {
   margin-bottom: 16px;
-  margin-bottom: 8px;
 }
 
 .modal-label {
@@ -735,6 +734,7 @@ body {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  display: block;
   color: rgba(46, 47, 66, 0.4);
 }
 .user-comment:focus {
