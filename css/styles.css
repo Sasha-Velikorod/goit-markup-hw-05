@@ -533,10 +533,10 @@ body {
   align-items: baseline;
   justify-content: flex-end;
   background: #2e2f42;
+  margin-left: 80px;
 }
 .form-footer {
   display: flex;
-  margin-left: 80px;
   gap: 24px;
 }
 .footer-subscribe-text {
@@ -573,18 +573,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
   background: #4d5ae5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
-  margin-left: 24px;
   cursor: pointer;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  background-color: #404bbf;
+}
+
 .footer-svg-form {
   margin-left: 16px;
 }
@@ -593,8 +598,8 @@ body {
 
 .modal-overflow {
   position: fixed;
-  /* opacity: 0; */
-  /* pointer-events: none; */
+  opacity: 0;
+  pointer-events: none;
   top: 0;
   left: 0;
   z-index: 99999;
@@ -673,7 +678,6 @@ body {
   color: #8e8f99;
   display: block;
   margin-bottom: 4px;
-  margin-top: 8px;
 }
 .modal-form {
 }
@@ -800,8 +804,13 @@ body {
   text-align: center;
   color: #fff;
   cursor: pointer;
-  margin-left: 95px;
+  margin-left: auto;
+  margin-right: auto;
   text-transform: capitalize;
   display: block;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.send-btn:hover,
+.send-btn:focus {
+  background-color: #404bbf;
 }
