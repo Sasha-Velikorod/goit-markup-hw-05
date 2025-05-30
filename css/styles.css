@@ -632,7 +632,7 @@ body {
   padding-bottom: 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-btn {
+/* .modal-close-btn {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
@@ -647,8 +647,9 @@ body {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-close-btn:hover {
+} */
+
+/* .modal-close-btn:hover {
   background-color: #404bbf;
   border: none;
 }
@@ -660,13 +661,50 @@ body {
 .modal-close-btn:hover .modal-close-svg,
 .modal-close-btn:focus .modal-close-svg {
   fill: #ffffff;
-}
-
+} */
+/* 
 .modal-close-svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* fill: #ffffff; */
+.modal-close-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 24px;
+  right: 24px;
+  border: none;
+  background-color: transparent;
+  line-height: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background: #e7e9fc;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-svg {
+  width: 8px;
+  height: 8px;
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-btn:focus .modal-close-svg,
+.modal-close-btn:hover .modal-close-svg {
+  fill: #ffffff;
+}
+.modal-close-btn:hover {
+  background-color: #404bbf;
+  border: none;
+}
+.modal-close-btn:focus {
+  border: none;
+  background-color: #404bbf;
+}
 
 .modal-title {
   text-align: center;
